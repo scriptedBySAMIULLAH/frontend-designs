@@ -1,0 +1,221 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bb{
+    @apply
+    border border-red-600
+}
+.bp{
+    @apply
+    border border-purple-800
+}
+
+
+
+.btn1{
+@apply
+rounded-full  text-typeWriterColor border  border-green-600 px-6 py-2
+}
+.btn2{
+@apply
+rounded-full text-white bg-typeWriterColor px-6 py-2
+}
+
+.card
+{
+    @apply
+    bg-white rounded-md shadow-md w-[14rem] h-[16rem] flex flex-col relative  
+}
+
+.ima{
+
+    @apply
+    w-full object-cover h-auto rounded-md
+}
+
+.card_btn
+
+{
+    @apply
+    bg-typeWriterColor text-white text-center p-2 w-fit rounded-md mt-4 transition duration-150 hover:opacity-75
+}
+
+.card_heading
+{
+    @apply
+    font-bold px-2 mt-2 truncate
+}
+
+.student_feedback_card
+{
+
+    @apply
+    rounded-md shadow-2xl p-4 sm:p-8 w-full sm:max-w-[18rem] flex flex-col space-y-3 transition transform sm:hover:scale-105 duration-200 sm:hover:shadow-xl sm:hover:shadow-green-200
+}
+
+.student_feedback_card label h3
+{
+@apply
+
+font-black
+
+}
+
+section
+{
+    @apply
+    mb-5
+}
+
+.blogs_container .blog {
+    @apply transition-transform duration-300 ease-in-out sm:hover:scale-110;
+}
+.dev_cards .card img {
+    @apply transition-transform duration-300 ease-in-out hover:scale-110;
+}
+
+
+nav li {
+@apply
+ relative pb-1;
+
+}
+
+nav li::after
+{
+    content: "";
+    @apply
+    absolute left-0 bottom-0 w-0 transition-all duration-200 bg-green-500 h-1 
+}
+nav li:hover::after
+{
+    @apply
+     w-full
+}
+
+.box
+{
+    @apply
+    border border-green-600   w-fit rounded-md px-2 py-1 border-x-2 border-y-2 text-center
+}
+.box_container
+{
+    @apply
+    relative flex items-center gap-2
+}
+.box_container p
+{
+    @apply
+    font-bold text-black
+}
+
+i{
+
+    @apply
+    text-green-600
+}
+
+.heading{
+@apply
+relative text-5xl text-black font-bold text-wrap
+
+}
+.Card{
+@apply
+  overflow-hidden rounded-md shadow-md w-full max-w-sm xl:max-w-md pb-2 
+
+}
+.card_img{
+@apply
+  block w-full object-cover h-40
+
+}
+.min-card{
+@apply
+border border-typeWriterColor flex flex-col items-center justify-center border-x-2 border-y-2 w-[14rem] sm:max-w-[18rem] xl:max-w-[20rem] rounded-md py-1
+
+}
+.min-card-h3{
+@apply
+text-black font-bold text-2xl
+
+}
+.min-card label svg{
+@apply
+transition transform hover:scale-105
+
+}
+.txt-card{
+@apply
+w-full max-w-sm  text-center space-y-2 flex flex-col items-center
+
+}
+.dots :nth-child(2){
+@apply
+hover:bg-green-200 transition transform hover:scale-110 duration-300
+
+}
+.dots :nth-child(3){
+@apply
+hover:bg-green-300 transition transform hover:scale-110 duration-300
+
+}
+.dots :nth-child(4){
+@apply
+hover:bg-green-400 transition transform hover:scale-110 duration-300
+
+}
+.dots-number{
+@apply
+border border-black rounded-full text-center  bg-white shadow-md text-xl h-12 w-12 py-2 text-black
+
+}
+
+.contact-from{
+
+    @apply font-light
+}
+
+.contact-from label{
+
+    @apply
+    block text-white mb-[0.2em] font-medium
+}
+.contact-from input {
+    @apply w-full rounded-md px-3 py-2 border border-gray-300 bg-gray-800 text-white 
+    focus:ring-2 focus:ring-green-300 focus:border-green-400 outline-none transition-all;
+}
+
+.login-form .input-fields
+
+{
+    @apply bg-white w-full appearance-none  text-black outline-none
+    
+    
+}
+.login-form .input-divs
+
+{
+    @apply bg-white w-full p-2 border border-gray-600 rounded-sm mt-4
+    
+    
+}
+.input-divs i
+
+{
+    @apply cursor-pointer
+    
+    
+}
+.input-divs 
+
+{
+    @apply flex flex-col sm:flex-row sm:items-center  mb-4 bg-white
+    
+    
+}
+
+
+
+

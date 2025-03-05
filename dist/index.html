@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="./custom.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <script src="./typewriterEffect.js" defer></script> -->
+    <script src="./animation.js" defer></script>
+    <script src="./navBar.js" defer></script>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    
+    <title>Internee.pk</title>
+  </head>
+  <body class="font-poppins text-txt">
+    <header
+      class="w-full flex h-20 justify-between  items-center p-1.5 sm:p-2 md:p-2.5 text-sm bg-main_bg mb-4"
+    >
+      <div class="logo w-36 sm:w-64 md:w-36">
+        <img
+          src="../assets/logo.png"
+          alt="internee.pk"
+          class="object-cover w-full h-auto"
+        />
+      </div>
+      <nav class="hidden sm:block">
+       <ul class="list-none sm:space-x-2 md:space-x-3 lg:space-x-4  flex sm:font-light md:font-semibold text-[#2c3339] items-center justify-between">
+        <li><a href="./index.html">Home</a></li>
+      <li><a href="./internship.html">Internship</a></li>
+      <li><a href="./graduateProgram.html">Graduate Program</a></li>
+      <li><a href="./companyCollab.html">Company Collaboration</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+       </ul>
+      </nav>
+      <div class="btns  hidden sm:flex sm:gap-1 md:gap-2  items-center">
+        <button
+          class="bg-btn text-white md:px-4 sm:px-1 text-nowrap sm:py-1 md:py-2 duration-200 rounded-full hover:bg-opacity-55 sm:font-thin md:font-semibold"
+        >
+          Job portal
+        </button>
+        <button
+          class="bg-white hover:opacity-55 text-typeWriterColor border border-x-2 border-y-2 border-green-600 md:px-4 sm:py-1 sm:px-1  md:py-2 duration-200 rounded-full sm:font-thin md:font-semibold text-nowrap"
+        >
+        <a href="./loginForm.html">Internee's Login</a>
+        </button>
+      </div>
+
+      <div class="block sm:hidden humberger">
+        <h1 class="text-3xl cursor-pointer font-bold">&#9776;</h1>
+      </div>
+      <div class="hidden sm:hidden cross transition-transform duration-150 hover:rotate-90">
+        <h1 class="text-4xl cursor-pointer font-bold ">&times;</h1>
+      </div>
+      
+    </header>
+    <ul class="list-none hidden  sm:hidden  w-full space-y-2 flex-col items-center font-medium text-[#2c3339] max-w-[100vw] mobile-menue">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./internship.html">Internship</a></li>
+      <li><a href="./graduateProgram.html">Graduate Program</a></li>
+      <li><a href="./companyCollab.html">Company Collaboration</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+      <li><a href="./https://career.internee.pk/">Job portal</a></li>
+      <li><a href="./loginForm.html">Internee's Login</a></li>
+     </ul>
+    <main class="  flex flex-col items-center px-6">
+      <section class="internship flex flex-col space-y-4 sm:flex-row justify-around mt-4 mb-6">
+        <div class="right_side w-full sm:w-[50%]">
+          <div class="message mb-4">
+            <p class="text-4xl font-black">Looking for dream internship?</p>
+            <p id="typewriter"  class="text-4xl font-black text-typeWriterColor"></p>
+          </div>
+          <p class="mb-2">
+            Internee.pk kickstart student's tech careers with first internships,
+            providing industry exposure, practical skills, and networking
+            opportunities, paving the way for their success in the tech
+            industry.
+          </p>
+            <div class="btn_imgs flex flex-col items-center sm:items-start space-y-2">
+
+          
+          <div class="images_gropp flex sm:w-[50%] items-center justify-between  mb-4">
+            <img src="../assets/see.png" class="w-full object-cover h-auto" alt="see" />
+            <img src="../assets/nic.png" class="w-full object-cover h-auto" alt="nic" />
+            <img src="../assets/pitb.png" class="w-full object-cover h-auto" alt="pitb" />
+            <img src="../assets/cloud.png"class="w-full object-cover h-auto" alt="cloud" />
+          </div>
+
+          <div class="btns_group flex gap-1">
+            <label class=" flex flex-col items-center">
+              <button class="border text-center px-6 border-typeWriterColor border-x-2 border-y-2 text-typeWriterColor  py-2 hover:bg-opacity-35 duration-150 rounded-full">Job Portal</button>
+              <p class="text-xs tracking-tighter">Get latest Job Updates</p>
+            </label>
+
+            <label class="flex flex-col items-center">
+              <button class="border text-center px-6 text-white bg-typeWriterColor py-2 hover:bg-opacity-35 duration-150 rounded-full">Our LMS</button>
+              <p class="text-xs tracking-tighter">90% Courses are in Urdu</p>
+            </label>
+          </div>
+        </div>
+        </div>
+        <div class="left_side w-full sm:h-[20rem] sm:w-[20rem] overflow-hidden border shadow-md rounded-md">
+          <img src="../assets/LMS video.gif" alt="" class="w-full object-cover h-auto rounded-md" />
+        </div>
+      </section>
+
+      <section class="trusted">
+        <h1 class="text-center font-bold text-xl sm:text-5xl mb-4">Trusted By the tech giants</h1>
+        <div class="brands flex items-center justify-between">
+          <img src="../assets/brands/moit_1.webp"  class="w-full object-cover h-auto"  alt="" />
+          <img src="../assets/brands/google_2.webp"  class="w-full object-cover h-auto"  alt="" />
+          <img src="../assets/brands/microsoft_3.png"  class="w-full object-cover h-auto"  alt="" />
+          <img src="../assets/brands/ignite_4.webp"  class="w-full object-cover h-auto"  alt="" />
+          <img src="../assets/brands/zindig_5.png"  class="w-full object-cover h-auto"  alt="" />
+          <img src="../assets/brands/smit_6.png"  class="w-full object-cover h-auto"  alt="" />
+          <img src="../assets/brands/PAFLA_8.png"  class="w-full object-cover h-auto"  alt="" />
+        </div>
+      </section>
+
+      <section class="intro flex items-center flex-col text-center justify-center">
+        <img src="../assets/intereeCap.png" alt="" class="block rounded-full shadow-md bg-white w-16 h-auto text-center" />
+        <h1 class="font-bold text-lg sm:text-4xl w-full mb-3">What is internee.pk?</h1>
+        <p class=" leading-relaxed w-full sm:max-w-[40%]">
+          The ultimate platform designed to turbocharge the IT sector in
+          Pakistan! We recognize the immense potential of talented individuals
+          in the country and aim to bridge the gap between them and the thriving
+          IT industry. Internee.pk offers a comprehensive range of virtual
+          internship opportunities exclusively in the IT field.
+        </p>
+      </section>
+      
+      <section class="dev_cards">
+      <div class="grid_support grid grid-cols-1 sm:grid-cols-3 gap-5">
+
+     
+        <div class="card">
+          
+            <img src="../assets/techs/BackendDevelopment.webp" alt=""  class="ima" />
+          
+          <h3 class="card_heading">Backend Development</h3>
+            <div class="w-full justify-end flex    px-2">
+              <button class="card_btn">Apply Now</button>
+            </div>
+         
+        </div>
+        <div class="card">
+            <img src="../assets/techs/mobile-app.webp" alt="" class="ima"/>
+          <h3 class="card_heading">App Development</h3>
+            <div class="w-full justify-end flex    px-2">
+          <button class="card_btn">Apply Now</button>
+            </div>
+        </div>
+
+        <div class="card">
+         
+            <img src="../assets/techs/graphics.webp" alt="" class="ima"/>
+        
+
+          <h3 class="card_heading">Graphic Design</h3>
+
+          <div class="w-full justify-end flex    px-2">
+            <button class="card_btn">Apply Now</button>
+              </div>
+        </div>
+
+        <div class="card">
+            <img src="../assets/techs/frontend.webp" class="ima" alt="" />
+             <h3 class="card_heading">Frontend Internship</h3>
+
+             <div class="w-full justify-end flex   px-2">
+              <button class="card_btn">Apply Now</button>
+              </div>
+          </div>
+
+        <div class="card">
+            <img src="../assets/techs/chatbot.webp" alt="" class="ima" />
+          <h3 class="card_heading">Chatbot Development</h3>
+
+          <div class="w-full justify-end flex    px-2">
+            <button class="card_btn">Apply Now</button>
+            </div>
+        </div>
+      </div>
+        <div class="flex items-center justify-center w-full mt-4">
+          <button class="flex items-center card_btn">Browse more internships
+            <svg class="w-4 h-4 ml-2 transition-transform duration-300 ease-in-out transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="--darkreader-inline-stroke: currentColor;" data-darkreader-inline-stroke=""><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </button>
+        </div>
+      </section>
+      <label class="block text-center py-4 bg-[#f3f4f6] w-full">
+        <h4 class="text-lg">Our Blog</h4>
+        <h1 class="text-4xl font-bold">Recent Blog</h1>
+      </label>
+
+      <section class="blogs bg-[#f3f4f6] w-full">
+        <div class="container blogs_container mx-auto  grid w-full grid-cols-1 sm:grid-cols-4 gap-4 py-12 place-items-center bg-[#f3f4f6]">
+          <div class="blog rounded-md shadow-md flex flex-col w-full sm:max-w-[200px] p-4 bg-white">
+            <img src="../assets/blogs/certificate.jpeg" alt="" class="object-cover w-full rounded-md">
+            <h1 class="font-bold text-black mt-4">
+              Complete all of the task but didn't get certification yet? 😓🤦
+            </h1>
+            <p class="mt-2">
+              Drop us a quick email at issues@internee.pk with the subject "Didn't get certification yet." Our team will swiftly resolve the matter, ensuring you get your recognition promptly.
+            </p>
+          </div>
+          
+          <div class="blog rounded-md shadow-md flex flex-col w-full sm:max-w-[200px] p-4 bg-white">
+            <img src="../assets/blogs/mentor.jpeg" alt="" class="object-cover w-full rounded-md">
+            <h1 class="font-bold text-black mt-4">
+              Looking to make a meaningful impact in the community? 🌟🎉
+            </h1>
+            <p class="mt-2">
+              Our goal is to make Pakistan an IT Hub. For this, we need more hands-on developers and tech enthusiasts who will elevate Pakistan's IT exports.
+            </p>
+          </div>
+        
+          <div class="blog rounded-md shadow-md flex flex-col w-full sm:max-w-[200px] p-4 bg-white">
+            <img src="../assets/blogs/comunity.jpeg" alt="" class="object-cover w-full rounded-md">
+            <h1 class="font-bold text-black mt-4">
+              🚀Calling communities to Empower Students with Internee.pk!✌
+            </h1>
+            <p class="mt-2">
+              We’d love to discuss how a collaboration with Internee.pk can benefit your universities, societies, institutes, and educational institutions, especially for students.
+            </p>
+          </div>
+        
+          <div class="blog rounded-md shadow-md flex flex-col w-full sm:max-w-[200px] p-4 bg-white">
+            <img src="../assets/blogs/claimCert.PNG" alt="" class="object-cover w-full rounded-md">
+            <h1 class="font-bold text-black mt-4">
+              Ready to Showcase Your Expertise? Follow These Simple Steps! 🌟
+            </h1>
+            <p class="mt-2">
+              To complete the process, send us all the task details via email at careers@internee.pk. This ensures we have all the necessary information to validate your certification.
+            </p>
+          </div>
+        </div>
+      </section>
+      
+      <div class="w-full text-center  p-4 bg-[#f9fafb]">
+        <h1 class="font-black text-base sm:text-4xl mb-2">What Students are saying about internee.pk</h1>
+        <h5>
+          Around 1500+ students have said how good internee.pk helped them in
+          thier career 👨🏻‍🎓
+        </h5>
+      </div>
+
+      <section class="student_saying bg-[#f9fafb] w-full  relative py-12">
+       
+          <div class="stduent_wrapper grid-cols-1 grid sm:grid-cols-3  gap-4 p-8 w-full">
+
+
+            <div class="student_feedback_card">
+              <label class="block"> ⭐⭐⭐⭐⭐ </label>
+              <p>
+                "This platform helps students so boots thier career with hands-on
+                practice with learning as well."
+              </p>
+    
+              <label class="block">
+                <h3>Rabia Zain</h3>
+                <p>Lahore, Pakistan</p>
+              </label>
+            </div>
+    
+            <div class="student_feedback_card">
+              <label class="block"> ⭐⭐⭐⭐⭐ </label>
+              <p>
+                “Thanks to internee.pk, I grew up my skills here and now i am
+                working as a Flutter Developer in a US company.”
+              </p>
+    
+              <label class="block">
+                <h3>Kashan Soomro</h3>
+                <p>Karachi, Pakistan</p>
+              </label>
+            </div>
+            <div class="student_feedback_card">
+              <label class="block"> ⭐⭐⭐⭐⭐ </label>
+              <p>
+                “I find internee.pk to be an outstanding to get hands on experience.
+                Sometimes you have to spend to make lot of projects.”
+              </p>
+    
+              <label class="block">
+                <h3>Mohammad Rafiq</h3>
+                <p>Larkana, Pakistan</p>
+              </label>
+            </div>
+            </div>
+       
+       
+      </section>
+
+      <section class="task_portal w-full py-12">
+        <div class="container mx-auto flex flex-col sm:flex-row items-center justify-around px-16 gap-10">
+
+        <div class="left w-full md:w-1/2">
+          <div class="task_portal_img max-h-28 w-full max-w-lg">
+            <img src="../assets/task.webp" alt="" class="object-cover w-full h-auto"/>
+          </div>
+        </div>
+        <div class="right w-full md:w-1/2">
+          <div class="space-y-3 w-full">
+            <h3 class="font-black text-base text-black sm:text-xl">Our own task portal</h3>
+            <h1 class=" text-base w-full  sm:text-2xl font-extrabold text-black ">Manage Project Via Own Task Portal</h1>
+            <p>
+              Welcome to internee.pk task portal. Where Tasks Transform Into
+              Skills
+            </p>
+          </div>
+          <div class="task_grid grid grid-cols-1 sm:grid-cols-3 gap-2">
+
+        
+          <div class="tasks_card ">
+            <div class="small_icons  transition-all scr duration-200">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 256 256"
+                class="h-12 w-12 m-2 p-4 text-[#43a724] bg-[#fdae1e0d]"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M216,64H147.31l34.35-34.34a8,8,0,1,0-11.32-11.32L128,60.69,85.66,18.34A8,8,0,0,0,74.34,29.66L108.69,64H40A16,16,0,0,0,24,80V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V80A16,16,0,0,0,216,64Zm0,136H40V80H216V200Z"
+                ></path>
+              </svg>
+            </div>
+            <h5>Hands on Projects</h5>
+            <p class="text-sm">
+              we believe in learning by doing. Dive into hands-on projects that
+              simulate real-world scenarios. From coding challenges to creative
+              projects, every task is crafted to impart practical skills that
+              resonate in professional environments.
+            </p>
+          </div>
+
+          <div class="tasks_card">
+            <div class="small_icons">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 640 512"
+                class="h-12 w-12 m-2 p-4 text-[#43a724] bg-[#fdae1e0d]"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M192 256c61.9 0 112-50.1 112-112S253.9 32 192 32 80 82.1 80 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C51.6 288 0 339.6 0 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zM480 256c53 0 96-43 96-96s-43-96-96-96-96 43-96 96 43 96 96 96zm48 32h-3.8c-13.9 4.8-28.6 8-44.2 8s-30.3-3.2-44.2-8H432c-20.4 0-39.2 5.9-55.7 15.4 24.4 26.3 39.7 61.2 39.7 99.8v38.4c0 2.2-.5 4.3-.6 6.4H592c26.5 0 48-21.5 48-48 0-61.9-50.1-112-112-112z"
+                ></path>
+              </svg>
+            </div>
+            <h5>How to represent yourself</h5>
+            <p class="text-sm">
+              More than just completing tasks, It empowers you to showcase your
+              journey. Every completed task contributes to your digital
+              portfolio, a dynamic representation of your skills and
+              accomplishments. Let your work speak volumes about your
+              capabilities.
+            </p>
+          </div>
+
+          <div class="tasks_card">
+            <div class="small_icons">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                class="h-12 w-12 m-2 p-4 text-[#43a724] bg-[#fdae1e0d]"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill="none"
+                  stroke-width="2"
+                  d="M12,20 L24,20 M12,12 L24,12 M12,4 L24,4 M1,19 L4,22 L9,17 M1,11 L4,14 L9,9 M9,1 L4,6 L1,3"
+                ></path>
+              </svg>
+            </div>
+            <h5>Easy to understand</h5>
+            <p>
+              Learning shouldn't be complicated. Our tasks are designed to be
+              easily comprehensible, ensuring a smooth learning experience for
+              everyone. Whether you're a seasoned professional or a beginner.
+            </p>
+          </div>
+          <div class="tasks_card">
+            <div class="small_icons">
+              <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-12 w-12 m-2 p-4 text-[#43a724] bg-[#fdae1e0d]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M21 12v3a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1v-10a1 1 0 0 1 1 -1h9"></path><path d="M7 20l10 0"></path><path d="M9 16l0 4"></path><path d="M15 16l0 4"></path><path d="M17 4h4v4"></path><path d="M16 9l5 -5"></path></svg>
+            </div>
+            <h5>SDLC Techniques </h5>
+            <p class="text-sm">
+              Understanding the Software Development Life Cycle (SDLC) is pivotal in the tech world. Acquire skills that align with industry standards and boost your project management proficiency.
+            </p>
+          </div>
+        </div>
+        </div>
+        </div>
+
+        
+      </section>
+
+      <section class="our_lms py-12">
+        
+        <div class="container mx-auto flex flex-col sm:flex-row items-center px-8 gap-5 sm:px-16 sm:gap-10">
+          
+        <div class="lms_grid_lft w-full md:w-1/2">
+          <div class="space-y-3 w-full">
+            <h3 class="font-black text-black text-base sm:text-3xl">Our LMS</h3>
+            <h1 class="text-lg sm:text-4xl sm:font-extrabold text-black">Guided Tutorials in Learning Management System</h1>
+            <p>
+              Want to learn something but don't know what's the roadmap or your
+              english is not too good? That's why we launch LMS for you.
+            </p>
+            </div>
+          <div class="task_grid  grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-6">
+          <div class="tasks_card">
+            <div class="small_icons">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                class="h-12 w-12 m-2 p-4 text-[#43a724] bg-[#fdae1e0d]"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill="none"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                  d="M400 240c-8.89-89.54-71-144-144-144-69 0-113.44 48.2-128 96-60 6-112 43.59-112 112 0 66 54 112 120 112h260c55 0 100-27.44 100-88 0-59.82-53-85.76-96-88z"
+                ></path>
+                
+              </svg>
+            </div>
+            <h5>Sell Courses and Earn</h5>
+            <p>
+              Are you an expert in your field? Share your knowledge on our LMS.
+              Create and sell courses, or contribute as an instructor. Empower
+              others on their learning journey while earning rewards for your
+              expertise.
+            </p>
+          </div>
+
+          <div class="tasks_card">
+            <div class="small_icons">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                class="h-12 w-12 m-2 p-4 text-[#43a724] bg-[#fdae1e0d]"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path
+                  d="M14.73 13.31A6.388 6.388 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.43 0 2.74-.48 3.81-1.27L19.59 21 21 19.59l-6.27-6.28zM9.5 14C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                ></path>
+                
+              </svg>
+            </div>
+            <h5>Certification</h5>
+            <p>
+              Complete courses on our LMS and earn certifications that validate
+              your expertise. Showcase your accomplishments to potential
+              employers and stand out in a competitive landscape.
+            </p>
+          </div>
+
+          <div class="tasks_card">
+            <div class="small_icons">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                class="h-12 w-12 m-2 p-4 text-[#43a724] bg-[#fdae1e0d]"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path
+                  d="M3 19h17v2H3c-1.1 0-2-.9-2-2V6h2v13zM23 6v9c0 1.1-.9 2-2 2H7c-1.1 0-2-.9-2-2l.01-11c0-1.1.89-2 1.99-2h5l2 2h7c1.1 0 2 .9 2 2zM7 15h14V6h-7.83l-2-2H7v11z"
+                ></path>
+              </svg>
+            </div>
+            <h5>Practice Exercises</h5>
+            <p>
+              Theory is just the beginning. Our LMS goes beyond by offering
+              practical exercises that challenge and refine your skills. Apply
+              your knowledge in real-world scenarios, solidifying your
+              understanding and boosting your confidence.
+            </p>
+          </div>
+          </div>
+        </div>
+        <div class="right_grid  w-full md:w-1/2">
+
+            <div class="task_portal_img  w-full max-w-lg">
+             <img src="../assets/lmsPak.png" alt="" class="object-cover max-h-[700px] w-full "/>
+            </div>
+        </div>
+
+        </div>
+      </section>
+
+      <section class="Create-Courses py-12">
+        <div class="mx-auto px-6 lg:px-16 flex flex-col-reverse lg:flex-row items-center gap-10">
+          
+         
+          <div class="w-full task_portal_img lg:w-1/2">
+            <img src="../assets/instructor.png" alt="Instructor" class="w-full max-w-md mx-auto">
+          </div>
+      
+        
+          <div class="w-full lg:w-1/2">
+            
+   
+            <div class="mb-6">
+              <h3 class=" text-lg sm:text-2xl font-bold text-gray-800">Are you a Tech Instructor or Content Creator?</h3>
+              <h1 class="text-lg sm:text-3xl lg:text-4xl font-extrabold text-gray-900 leading-tight mt-2">
+                Create Courses in Local Language & Generate Income
+              </h1>
+              <p class="text-gray-600 mt-4">
+                Are you a professional looking to start your journey as a tech instructor and content creator to generate revenue? 
+                Just visit our LMS Instructor Portal and begin your teaching journey today.
+              </p>
+            </div>
+      
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              
+          
+              <div class="p-6 g  flex items-start gap-4">
+                <div class="h-12 w-12 flex items-center justify-center text-green-600  small_icons">
+            
+                  <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M18 2C18.5523 2 19 2.44772 19 3V11H17V4H7V20H11V22H6C5.44772 22 5 21.5523 5 21V3C5 2.44772 5.44772 2 6 2H18ZM15 12C17.2091 12 19 13.7909 19 16C19 16.7419 18.798 17.4366 18.446 18.0322L20.6569 20.2426L19.2426 21.6569L17.0313 19.4466C16.4359 19.7982 15.7415 20 15 20C12.7909 20 11 18.2091 11 16C11 13.7909 12.7909 12 15 12ZM15 14C13.8954 14 13 14.8954 13 16C13 17.1046 13.8954 18 15 18C16.1046 18 17 17.1046 17 16C17 14.8954 16.1046 14 15 14Z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h5 class="text-lg font-bold text-gray-800">Upload Tutorials & Exercises</h5>
+                  <p class="text-gray-600 text-sm mt-2">
+                    Transform your expertise into impactful learning materials. Easily upload tutorials and exercises to shape the learning experience.
+                  </p>
+                </div>
+              </div>
+      
+             
+              <div class="p-6  flex items-start gap-4">
+                <div class="h-12 w-12 flex items-center justify-center text-green-600 small_icons">
+              
+                  <svg class="w-8 h-8 " fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M11.9998 1L6 11H18L11.9998 1ZM11.9998 4.8873L14.4676 9H9.53232L11.9998 4.8873ZM6.75 20C5.23122 20 4 18.7688 4 17.25C4 15.7312 5.23122 14.5 6.75 14.5C8.26878 14.5 9.5 15.7312 9.5 17.25C9.5 18.7688 8.26878 20 6.75 20ZM6.75 22C9.37335 22 11.5 19.8734 11.5 17.25C11.5 14.6266 9.37335 12.5 6.75 12.5C4.12665 12.5 2 14.6266 2 17.25C2 19.8734 4.12665 22 6.75 22ZM15 15.5V19.5H19V15.5H15ZM13 21.5V13.5H21V21.5H13Z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h5 class="text-lg font-bold text-gray-800">Generate Revenue</h5>
+                  <p class="text-gray-600 text-sm mt-2">
+                    Teach what you love and earn what you deserve. Monetize your skills and reach a global audience.
+                  </p>
+                </div>
+              </div>
+      
+           
+              <div class="p-6  flex items-start gap-4">
+                <div class="h-12  small_icons w-12 flex items-center justify-center text-green-600 ">
+                
+                  <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 512 512">
+                    <path d="M416 199.5h-91.4V64H187.4v135.5H96l160 158.1 160-158.1zM96 402.8V448h320v-45.2H96z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h5 class="text-lg font-bold text-gray-800">Instructor Identity</h5>
+                  <p class="text-gray-600 text-sm mt-2">
+                    Build your personal brand, showcase your expertise, and create a recognizable identity in online education.
+                  </p>
+                </div>
+              </div>
+      
+           
+              <div class="p-6 flex items-start gap-4">
+                <div class="h-12 small_icons w-12 flex items-center justify-center text-green-600">
+                  <!-- Share Ratio Icon -->
+                  <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.57 6.699l5.693-4.936L8.585 1 3.273 5.596l-1.51-1.832L1 4.442l1.85 2.214.72.043zM15 5H6.824l2.307-2H15v2zM6 7h9v2H6V7zm9 4H6v2h9v-2z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h5 class="text-lg font-bold text-gray-800">Perfect Share Ratio</h5>
+                  <p class="text-gray-600 text-sm mt-2">
+                    We ensure fair revenue sharing. Your hard work deserves the right reward, and we make sure you get your share.
+                  </p>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+
+      <section class="job portal py-12">
+        <div class="mx-auto px-6 lg:px-16 flex flex-col-reverse lg:flex-row items-center gap-10">
+          <div class="job-portal_lft w-full lg:w-1/2">
+            <div class="job-portals_txt">
+              <h3  class="text-base sm:text-2xl sm:font-bold text-gray-800 text-wrap">Already have a good skill but looking for job?</h3>
+  
+              <h1 class="text-base sm:text-3xl lg:text-4xl font-extrabold text-gray-900 leading-tight mt-2">Job Portal, Ultimate Place To Find The Best Job</h1>
+              <p class="text-wrap">
+                Streamline the approval process with your customer to quickly
+                close the deal, get the sale, and start production.
+              </p>
+            </div>
+
+           <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
+            <div class="jobportal_card">
+              <div class="small_icons">
+                <svg
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="h-12 w-12 m-2 p-4 text-[#43a724] bg-[#fdae1e0d]"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21 12v3a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1v-10a1 1 0 0 1 1 -1h9"
+                  ></path>
+                  <path d="M7 20l10 0"></path>
+                  <path d="M9 16l0 4"></path>
+                  <path d="M15 16l0 4"></path>
+                  <path d="M17 4h4v4"></path>
+                  <path d="M16 9l5 -5"></path>
+                </svg>
+              </div>
+              <p>100% Mobile friendly online art approvals</p>
+            </div>
+  
+            <div class="jobportal_card">
+              <div class="small_icons">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 640 512"
+                  class="h-12 w-12 m-2 p-4 text-[#43a724] bg-[#fdae1e0d]"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M192 256c61.9 0 112-50.1 112-112S253.9 32 192 32 80 82.1 80 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C51.6 288 0 339.6 0 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zM480 256c53 0 96-43 96-96s-43-96-96-96-96 43-96 96 43 96 96 96zm48 32h-3.8c-13.9 4.8-28.6 8-44.2 8s-30.3-3.2-44.2-8H432c-20.4 0-39.2 5.9-55.7 15.4 24.4 26.3 39.7 61.2 39.7 99.8v38.4c0 2.2-.5 4.3-.6 6.4H592c26.5 0 48-21.5 48-48 0-61.9-50.1-112-112-112z"
+                  ></path>
+                </svg>
+              </div>
+              <p>
+                Communicate easier Add multiple recipients to an Art Approval to
+                reduce traditional email clutter.
+              </p>
+            </div>
+  
+            <div class="jobportal_card">
+              <div class="small_icons">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  class="h-12 w-12 m-2 p-4 text-[#43a724] bg-[#fdae1e0d]"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3 6a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1Zm1.5 4.5h4v-4h-4Zm8.25-5a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5h-7.5Zm0 6a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5h-7.5Zm0 6a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5h-7.5Zm-2.97-2.53a.75.75 0 0 1 0 1.06l-3.5 3.5a.75.75 0 0 1-1.06 0l-2-2a.75.75 0 1 1 1.06-1.06l1.47 1.47 2.97-2.97a.75.75 0 0 1 1.06 0Z"
+                  ></path>
+                </svg>
+              </div>
+              <p>
+                Add changes faster Students can add comments to approvals for
+                changes, saving you both time on finalizing designs.
+              </p>
+            </div>
+          </div>
+        </div>
+          <div class="task_portal_img w-full lg:w-1/2">
+            <img src="../assets/job.png" alt="" class="max-w-md mx-auto h-auto sm:h-[450px]" />
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+
+    <footer class="bg-[#f9fafb]  py-12">
+
+          <div class="sm:container mx-auto grid grid-cols-1 sm:grid-cols-3 items-center place-items-center gap-4">
+                      
+          <div class="one flex flex-col  py-4  space-y-4   w-full">
+            <div class="img h-fit w-52 ">
+              <img src="../assets/logo.png" alt="" class="object-cover w-full h-auto">
+            </div>
+
+              <div class="texts space-y-2 sm:text-left text-center">
+                <p class="text-wrap">The ultimate platform designed to turbocharge the IT sector in Pakistan.</p>
+                <p class="text-typeWriterColor">info@internee.pk</p>
+                <p class="text-typeWriterColor">+92312-3023645</p>
+                <h2>NIC Karachi, NED University</h2>
+              </div>
+
+            <div class="logos flex w-full sm:w-fit gap-2 text-center justify-center">
+              <a href="https://www.facebook.com/people/Interneepk/100093222249320/" class="bg-black text-white p-2 hover:bg-blue-500 rounded-full">
+                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"></path></svg>
+              </a>
+              <a href="https://twitter.com/interneepk" class="bg-black text-white p-2 hover:bg-blue-600 rounded-full">
+                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"></path></svg>
+              </a>
+              <a href="https://www.instagram.com/internee.pk/" class="bg-black text-white p-2 hover:bg-gradient-to-r from-[#feda75] via-[#fa7e1e] to-[#d62976] rounded-full">
+                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"></path></svg>
+              </a>
+            </div>
+
+
+          </div>
+
+
+            <div class="two flex items-center justify-center sm:justify-between space-x-6 sm:space-x-6   w-fit sm:w-full">
+
+              <ul class="space-y-4 ftr">
+                <li><h3>Company</h3></li>
+                <li><a href="/internship">Contact Us</a></li>
+                <li><a href="/Contact us">Interships</a></li>
+                <li><a href="/company">Company</a></li>
+                
+              </ul>
+              <ul class="space-y-4 ftr">
+                <li><h3>Help</h3></li>
+                <li><a href="/internship">Job portal</a></li>
+                <li><a href="/Contact us">Task Portal</a></li>
+                <li><a href="/company">LMS</a></li>
+                
+              </ul>
+            </div>
+
+            <div class="three flex justify-center items-center space-y-4 px-1  flex-col  w-full">
+
+                  <h4 class="font-bold">Subscribe to newsletter</h4>         
+                
+                  <div class=" sm:space-y-3 flex flex-col w-full">
+                    <input type="email" placeholder="Enter your email" class="p-3 rounded-md outline-none focus:ring-1 ring-typeWriterColor">
+                    <button class="card_btn ">Subscribe</button>
+                  </div>
+                
+            </div>
+          </div>
+          <p class="text-center mt-4"> © Copyright 2025, All Rights Reserved by <span class="text-blue-800 font-semibold">Techviochats</span></p>
+    </footer>
+
+
+    <script type="text/babel">
+      function TypewriterEffect() {
+          const messages = [
+              "Market Competitive salary",
+              "On your desired domain",
+              "Gains hands-on experience"
+          ];
+          const [text, setText] = React.useState("");
+          const [i, setI] = React.useState(0);
+          
+          React.useEffect(() => {
+              let arr = Array.from(messages[i]);
+              let targetText = "";
+              let index = 0;
+
+              function typeWriterEffect() {
+                  targetText = "";
+                  arr.forEach((char, charIndex) => {
+                      setTimeout(() => {
+                          setText((prev) => prev + char);
+                          if (charIndex === arr.length - 1) {
+                              setTimeout(() => {
+                                  deleteText();
+                              }, 1000); // Wait before deleting
+                          }
+                      }, charIndex * 80);
+                  });
+              }
+
+              function deleteText() {
+                  arr.reverse().forEach((char, charIndex) => {
+                      setTimeout(() => {
+                          setText((prev) => prev.slice(0, -1));
+                          if (charIndex === arr.length - 1) {
+                              setTimeout(() => {
+                                  arr.reverse();
+                                  setI((prevI) => (prevI === messages.length - 1 ? 0 : prevI + 1));
+                              }, 500);
+                          }
+                      }, charIndex * 80);
+                  });
+              }
+
+              typeWriterEffect();
+          }, [i]);
+
+          return <span>{text}</span>;
+      }
+
+     
+      ReactDOM.render(<TypewriterEffect />, document.getElementById('typewriter'));
+  </script>
+  </body>
+</html>

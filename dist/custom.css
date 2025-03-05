@@ -1,0 +1,85 @@
+#typewriter::after {
+    content: "|";
+    animation: blink 0.9s infinite;
+  }
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  li:hover{
+
+    color:#4baa2d;
+}
+  li{
+
+    cursor: pointer;
+}
+
+.student_feedback_card{
+
+  background-color: white;
+
+}
+ .task_portal, .our_lms, .Create-Courses {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; 
+}
+
+
+.task_portal_img
+{
+
+  transform: translateX(-100px);
+  opacity: 0;
+  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+
+}
+
+.animate-on{
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.small_icons{
+
+  transform: translateY(30px);
+  opacity: 0;
+  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+
+}
+.animate-on
+{
+
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+.ftr li:not(:first-child)
+{
+  color:#4baa2d;
+  color: black;
+}
+.ftr li:not(:first-child):hover
+{
+  color:#4baa2d;
+ 
+}
+
+
+
+.get_in_touch_ul li:hover
+{
+
+  color: white;
+}

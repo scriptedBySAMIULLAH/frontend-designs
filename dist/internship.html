@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="./custom.css" />
+    <script src="./animation.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+        <script src="./navBar.js" defer></script>
+    <title>Internship</title>
+  </head>
+  <body class="font-poppins text-txt">
+    <header
+      class="w-full flex h-20 justify-between items-center p-1.5 sm:p-2 md:p-2.5 text-sm bg-main_bg mb-4"
+    >
+      <div class="logo w-36 sm:w-64 md:w-36">
+        <img
+          src="../assets/logo.png"
+          alt="internee.pk"
+          class="object-cover w-full h-auto"
+        />
+      </div>
+      <nav class="hidden sm:block">
+        <ul
+          class="list-none sm:space-x-2 md:space-x-3 lg:space-x-4 flex sm:font-light md:font-semibold text-[#2c3339] items-center justify-between"
+        >
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./internship.html">Internship</a></li>
+          <li><a href="./graduateProgram.html">Graduate Program</a></li>
+          <li><a href="./companyCollab.html">Company Collaboration</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="btns hidden sm:flex sm:gap-1 md:gap-2 items-center">
+        <button
+          class="bg-btn text-white md:px-4 sm:px-1 text-nowrap sm:py-1 md:py-2 duration-200 rounded-full hover:bg-opacity-55 sm:font-thin md:font-semibold"
+        >
+          Job portal
+        </button>
+        <button
+          class="bg-white hover:opacity-55 text-typeWriterColor border border-x-2 border-y-2 border-green-600 md:px-4 sm:py-1 sm:px-1 md:py-2 duration-200 rounded-full sm:font-thin md:font-semibold text-nowrap"
+        >
+        <a href="./loginForm.html">Internee's Login</a>
+        </button>
+      </div>
+
+      <div class="block sm:hidden humberger">
+        <h1 class="text-3xl cursor-pointer font-bold">&#9776;</h1>
+      </div>
+      <div
+        class="hidden sm:hidden cross transition-transform duration-150 hover:rotate-90"
+      >
+        <h1 class="text-4xl cursor-pointer font-bold">&times;</h1>
+      </div>
+    </header>
+    <ul
+      class="list-none hidden sm:hidden w-full space-y-2 flex-col items-center font-medium text-[#2c3339] max-w-[100vw] mobile-menue"
+    >
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./internship.html">Internship</a></li>
+      <li><a href="./graduateProgram.html">Graduate Program</a></li>
+      <li><a href="./companyCollab.html">Company Collaboration</a></li>
+      <li><a href="./">Contact</a></li>
+      <li><a href="./https://career.internee.pk/">Job portal</a></li>
+      <li><a href="./loginForm.html">Internee's Login</a></li>
+    </ul>
+
+    <main class="flex flex-col px-6 py-12">
+      <section class="dev_cards container mx-auto">
+        <div class="grid_support grid grid-cols-1 sm:grid-cols-3 gap-5">
+          <div class="card">
+            <img
+              src="../assets/techs/BackendDevelopment.webp"
+              alt=""
+              class="ima"
+            />
+
+            <h3 class="card_heading">Backend Development</h3>
+            <div class="w-full justify-end flex px-2">
+              <button class="card_btn">Apply Now</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="../assets/techs/mobile-app.webp" alt="" class="ima" />
+            <h3 class="card_heading">App Development</h3>
+            <div class="w-full justify-end flex px-2">
+              <button class="card_btn">Apply Now</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="../assets/techs/graphics.webp" alt="" class="ima" />
+
+            <h3 class="card_heading">Graphic Design</h3>
+
+            <div class="w-full justify-end flex px-2">
+              <button class="card_btn">Apply Now</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="../assets/techs/frontend.webp" class="ima" alt="" />
+            <h3 class="card_heading">Frontend Internship</h3>
+
+            <div class="w-full justify-end flex px-2">
+              <button class="card_btn">Apply Now</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="../assets/techs/chatbot.webp" alt="" class="ima" />
+            <h3 class="card_heading">Chatbot Development</h3>
+
+            <div class="w-full justify-end flex px-2">
+              <button class="card_btn">Apply Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-center w-full mt-4">
+          <button class="flex items-center card_btn">
+            Browse more internships
+            <svg
+              class="w-4 h-4 ml-2 transition-transform duration-300 ease-in-out transform group-hover:translate-x-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              style="--darkreader-inline-stroke: currentColor"
+              data-darkreader-inline-stroke=""
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      
+      <section class="student_saying bg-[#f9fafb] w-full  relative py-12">
+       
+        <div class="stduent_wrapper grid-cols-1 grid sm:grid-cols-3  gap-4 p-8 w-full">
+
+
+          <div class="student_feedback_card">
+            <label class="block"> ⭐⭐⭐⭐⭐ </label>
+            <p>
+              "This platform helps students so boots thier career with hands-on
+              practice with learning as well."
+            </p>
+  
+            <label class="block">
+              <h3>Rabia Zain</h3>
+              <p>Lahore, Pakistan</p>
+            </label>
+          </div>
+  
+          <div class="student_feedback_card">
+            <label class="block"> ⭐⭐⭐⭐⭐ </label>
+            <p>
+              “Thanks to internee.pk, I grew up my skills here and now i am
+              working as a Flutter Developer in a US company.”
+            </p>
+  
+            <label class="block">
+              <h3>Kashan Soomro</h3>
+              <p>Karachi, Pakistan</p>
+            </label>
+          </div>
+          <div class="student_feedback_card">
+            <label class="block"> ⭐⭐⭐⭐⭐ </label>
+            <p>
+              “I find internee.pk to be an outstanding to get hands on experience.
+              Sometimes you have to spend to make lot of projects.”
+            </p>
+  
+            <label class="block">
+              <h3>Mohammad Rafiq</h3>
+              <p>Larkana, Pakistan</p>
+            </label>
+          </div>
+          </div>
+     
+     
+    </section>
+
+
+      <section>
+        <h1 class="text-4xl font-bold text-center">Why internee.pk?</h1>
+
+        <div
+          class="wrapper flex container mx-auto flex-col items-center sm:flex-row space-y-2 justify-center"
+        >
+          <div class="lft w-full md:w-1/2 flex flex-col">
+            <div class="box_container1 box_container">
+              <div class="box">
+                <span class="small_icons">
+                  <i class="fas fa-envelope"></i>
+                </span>
+              </div>
+              <p>20000+ Students already registered</p>
+            </div>
+
+            <div class="line h-16 bg-slate-400 w-0.5 ml-4"></div>
+
+            <div class="box_container2 box_container">
+              <div class="box">
+                <span class="small_icons">
+                  <i class="fas fa-tasks"></i>
+                </span>
+              </div>
+              <p>Task based projects that based on hands on experience</p>
+            </div>
+
+            <div class="line h-16 bg-slate-400 w-0.5 ml-4"></div>
+            <div class="box_container3 box_container">
+              <div class="box">
+                <span class="small_icons">
+                  <i class="fas fa-video"></i>
+                </span>
+              </div>
+              <p>Massive Courses with high-quality videos on LMS</p>
+            </div>
+
+            <div class="line h-16 bg-slate-400 w-0.5 ml-4"></div>
+            <div class="box_container4 box_container">
+              <div class="box">
+                <span class="small_icons">
+                  <i class="fas fa-laptop-code"></i>
+                </span>
+              </div>
+              <p>Empowering youth towards IT revolution & technology</p>
+            </div>
+
+            <div class="line h-16 bg-slate-400 w-0.5 ml-4"></div>
+            <div class="box_container5 box_container">
+              <div class="box">
+                <span class="small_icons">
+                  <i class="fas fa-briefcase"></i>
+                </span>
+              </div>
+              <p>Hands on Experience via Virtual internship</p>
+            </div>
+
+            <div class="line h-16 bg-slate-400 w-0.5 ml-4"></div>
+            <div class="box_container6 box_container">
+              <div class="box">
+                <span class="small_icons">
+                  <i class="fas fa-tasks"></i>
+                </span>
+              </div>
+              <p>Complete your task and get market competent job</p>
+            </div>
+
+            <div class="line h-16 bg-slate-400 w-0.5 ml-4"></div>
+            <div class="box_container7 box_container">
+              <div class="box">
+                <span class="small_icons">
+                  <i class="fas fa-handshake"></i>
+                </span>
+              </div>
+              <p>Direct Collaboration with companies for direct hiring</p>
+            </div>
+          </div>
+
+          <div class="right w-full md:w-1/2 rounded-lg">
+            <img
+              src="../assets/internship/programing.jpg"
+              alt=""
+              class="w-full h-auto object-cover max-w-sm mx-auto sm:max-w-[20rem] rounded-lg"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#f9fafb]  py-12">
+
+        <div class="sm:container mx-auto grid grid-cols-1 sm:grid-cols-3 items-center place-items-center gap-4">
+                    
+        <div class="one flex flex-col  py-4  space-y-4   w-full">
+          <div class="img h-fit w-52 ">
+            <img src="../assets/logo.png" alt="" class="object-cover w-full h-auto">
+          </div>
+
+            <div class="texts space-y-2 sm:text-left text-center">
+              <p class="text-wrap">The ultimate platform designed to turbocharge the IT sector in Pakistan.</p>
+              <p class="text-typeWriterColor">info@internee.pk</p>
+              <p class="text-typeWriterColor">+92312-3023645</p>
+              <h2>NIC Karachi, NED University</h2>
+            </div>
+
+          <div class="logos flex w-full sm:w-fit gap-2 text-center justify-center">
+            <a href="https://www.facebook.com/people/Interneepk/100093222249320/" class="bg-black text-white p-2 hover:bg-blue-500 rounded-full">
+              <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"></path></svg>
+            </a>
+            <a href="https://twitter.com/interneepk" class="bg-black text-white p-2 hover:bg-blue-600 rounded-full">
+              <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"></path></svg>
+            </a>
+            <a href="https://www.instagram.com/internee.pk/" class="bg-black text-white p-2 hover:bg-gradient-to-r from-[#feda75] via-[#fa7e1e] to-[#d62976] rounded-full">
+              <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"></path></svg>
+            </a>
+          </div>
+
+
+        </div>
+
+
+          <div class="two flex items-center justify-center sm:justify-between space-x-6 sm:space-x-6   w-fit sm:w-full">
+
+            <ul class="space-y-4 ftr">
+              <li><h3>Company</h3></li>
+              <li><a href="/internship">Contact Us</a></li>
+              <li><a href="/Contact us">Interships</a></li>
+              <li><a href="/company">Company</a></li>
+              
+            </ul>
+            <ul class="space-y-4 ftr">
+              <li><h3>Help</h3></li>
+              <li><a href="/internship">Job portal</a></li>
+              <li><a href="/Contact us">Task Portal</a></li>
+              <li><a href="/company">LMS</a></li>
+              
+            </ul>
+          </div>
+
+          <div class="three flex justify-center items-center space-y-4 px-1  flex-col  w-full">
+
+                <h4 class="font-bold">Subscribe to newsletter</h4>         
+              
+                <div class=" sm:space-y-3 flex flex-col w-full">
+                  <input type="email" placeholder="Enter your email" class="p-3 rounded-md outline-none focus:ring-1 ring-typeWriterColor">
+                  <button class="card_btn ">Subscribe</button>
+                </div>
+              
+          </div>
+        </div>
+        <p class="text-center mt-4"> © Copyright 2025, All Rights Reserved by <span class="text-blue-800 font-semibold">Techviochats</span></p>
+  </footer>
+  </body>
+</html>

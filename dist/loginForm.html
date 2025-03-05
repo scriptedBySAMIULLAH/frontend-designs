@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="/dist/output.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-main_bg text-black">
+
+    <main class="flex flex-col items-center justify-center h-screen">
+        <section class="w-full sm:max-w-sm mx-auto shadow-lg rounded-md  relative space-y-4 ">
+            <div class="internee-cap  text-center flex justify-center w-full">
+                <img src="../assets/logo.png" alt="internee" class=" w-64">
+            </div>
+            <form class="login-form   shadow-xl p-2.5 space-y-2 border border-t-2">
+
+                <div class="flex flex-col sm:flex-row sm:items-center input-divs mb-4 bg-white">
+                    <input type="email" id="email" class="input-fields" placeholder="Email">
+                    <i class="fas fa-envelope" ></i>
+                </div>
+
+                <div class=" input-divs ">
+                    <input type="password" id="password" class="input-fields" placeholder="Password">
+                    <i class="fas fa-eye password-icon"></i>
+                    <!-- <i class="fas fa-eye-slash"></i> -->
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-2 sm:justify-between">
+                   <label class=" flex items-center gap-2">
+                    <input type="checkbox" class="h-4 w-4 border border-gray-700">
+                    <p class="font-bold text-gray-600">Remember Me</p>
+                   </label>
+                    <button class="bg-typeWriterColor text-center px-6 py-2 font-semibold text-white transition-opacity hover:opacity-85 duration-150">Sign In</button>
+                </div>
+
+                <a href="https://task.internee.pk/forgot_password.php" class="text-center  w-full block text-green-500 hover:text-blue-500">Forgot Password?</a>
+
+
+            </form>
+        </section>
+    </main>
+    
+</body>
+
+    <script>
+        let password_icon=document.querySelector('.password-icon');
+
+        password_icon.addEventListener('click',(e)=>
+    {
+            let icon=e.target;
+           let isContain= icon.classList.contains('fa-eye');
+           icon.classList.toggle('fa-eye',!isContain);
+           icon.classList.toggle('fa-eye-slash',isContain);
+    })
+    </script>
+</html>
